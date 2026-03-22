@@ -9,7 +9,9 @@ npm install
 npm run dev
 ```
 
-개발 서버는 `vite.config.ts`의 `base`가 `/WebGame/`으로 설정되어 있으므로, 주소는 `http://localhost:5173/WebGame/` 형태로 열립니다.
+개발 모드에서는 `base`가 `/`이므로 **`http://localhost:5173/`** 로 열면 됩니다. 프로덕션 빌드만 GitHub Pages용으로 `/WebGame/`을 사용합니다.
+
+배포 결과물을 로컬에서 확인하려면 `npm run build` 후 `npm run preview` — preview는 프로덕션 `base`를 쓰므로 **`http://localhost:4173/WebGame/`** 형태로 열립니다.
 
 ## GitHub Pages
 
